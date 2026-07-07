@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavScroll from "./component/NavScroll.jsx";
 import Home from "./component/Home.jsx";
 import About from "./component/About.jsx";
+import Servicess from "./component/Servicess.jsx";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/servicess" element={<Servicess />} />
       </Routes>
     </BrowserRouter>
   );
