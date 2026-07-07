@@ -21,7 +21,7 @@ export default function NavScroll() {
             >
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#action6">Servicess</Nav.Link>
+              <Nav.Link href="#servicess">Servicess</Nav.Link>
 
               <NavDropdown title="User" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Profile</NavDropdown.Item>
