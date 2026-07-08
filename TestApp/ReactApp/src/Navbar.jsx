@@ -16,7 +16,19 @@ export default function Navbar({ onLogout }) {
           to="/dashboard"
           style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}
         >
-          Dashboard Home
+          Dashboard
+        </Link>
+        <Link
+          to="/home"
+          style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}
+        >
+          About
         </Link>
       </div>
 
