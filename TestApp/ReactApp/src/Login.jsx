@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css"; // Purana CSS file reuse karein
 
 export default function Login({ onLogin }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("rahul@gmail.com");
+  const [password, setPassword] = useState("Rahul@1234");
   const navigate = useNavigate();
 
   const handleFormSubmit = (e) => {
@@ -20,7 +20,7 @@ export default function Login({ onLogin }) {
   return (
     <div className="login-wrapper">
       <div className="login-box">
-        <h2>System Login</h2>
+        <h2>RD SYSTEMS</h2>
         <form onSubmit={handleFormSubmit} className="login-form">
           <div className="form-group">
             <label>Email Address</label>
