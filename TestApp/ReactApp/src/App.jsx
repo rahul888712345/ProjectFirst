@@ -2,7 +2,12 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
 import Login from "./Login.jsx";
 import Dashboard from "./Dashboard.jsx";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Contact from "./Contact.jsx";
+import Services from "./Services.jsx";
 import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 
 export default function App() {
   // Login state ko maintain karne ke liye state (ya localStorage use kar sakte hain)
@@ -49,12 +54,18 @@ export default function App() {
           }
         />
 
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+
         {/* Dashboard Route: Agar logged in nahi hai to wapas login page par kick out karo */}
         <Route
           path="/dashboard"
           element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
         />
       </Routes>
+      {isAuthenticated && <Footer onLogout={logoutUser} />}
     </BrowserRouter>
   );
 }

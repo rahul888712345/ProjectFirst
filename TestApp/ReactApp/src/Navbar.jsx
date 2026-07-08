@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import Home from "./Home";
 export default function Navbar({ onLogout }) {
   return (
     <nav
@@ -29,6 +29,19 @@ export default function Navbar({ onLogout }) {
           style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}
         >
           About
+        </Link>
+
+        <Link
+          to="/contact"
+          style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}
+        >
+          Contact
+        </Link>
+        <Link
+          to="/services"
+          style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}
+        >
+          Services
         </Link>
       </div>
 
