@@ -1,0 +1,86 @@
+/* Center wrapper: pure full screen overlay setup */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background-color: #f4f6f9; /* Light slate modern background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Card layout wrapper */
+.login-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card Header heading styling */
+.login-box h2 {
+  margin: 0 0 30px 0;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Stack layout configuration inside form element */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form group field components layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Label semantic typography adjustments */
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+/* Input elements sleek custom configuration overrides */
+.form-group input {
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dynamic glow response highlighting focused inputs */
+.form-group input:focus {
+  border-color: #3b82f6; /* Modern Blue tint accent color */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+/* Core dynamic theme call-to-action active button setup */
+.submit-login-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+/* Slight darken hover state layer feedback response */
+.submit-login-btn:hover {
+  background-color: #2563eb;
+}
