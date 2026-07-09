@@ -1,11 +1,9 @@
 import { useState } from "react";
-//import { useNavigate } from "react-router-dom";
 import "./Login.css"; // Purana CSS file reuse karein
 
 export default function Login({ onLogin }) {
   const [email, setEmail] = useState("rahul@gmail.com");
   const [password, setPassword] = useState("Rahul@1234");
-  //const navigate = useNavigate();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -44,6 +42,9 @@ export default function Login({ onLogin }) {
             Sign In
           </button>
         </form>
+        <p className="signup-redirect">
+          Don't have an account? <a href="/register">Sign up</a>
+        </p>
       </div>
     </div>
   );

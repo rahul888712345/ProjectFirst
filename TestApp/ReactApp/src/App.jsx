@@ -6,6 +6,7 @@ import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
 import Services from "./Services.jsx";
+import Register from "./Register.jsx";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
@@ -58,6 +59,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/register" element={<Register />} />
 
         {/* Dashboard Route: Agar logged in nahi hai to wapas login page par kick out karo */}
         <Route

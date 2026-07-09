@@ -1,5 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
-export default function Home() {
+export default function Home({ onLogout }) {
   const features = [
     {
       id: 1,
@@ -23,9 +24,22 @@ export default function Home() {
         "Easily tweak layouts, themes, and integrations to fit your precise needs.",
     },
   ];
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // 3. User ka session clear karein (agar localStorage use kar rahe hain)
+    localStorage.removeItem("userToken");
+
+    // 4. 🔥 User ko login page par bhej dein
+    // { replace: true } likhne se user Back button daba kar wapas dashboard par nahi aa payega
+    navigate("/login", { replace: true });
+  };
+
   function test() {
     alert("Register Successful!!");
   }
+
   return (
     <div className="home-container">
       {/* 1. HERO SECTION */}
